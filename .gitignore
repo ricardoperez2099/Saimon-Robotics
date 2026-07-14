@@ -1,8 +1,5 @@
-# Excluir carpeta de videos
+# Excluir carpeta de videos de stock
 videos/
-
-# Excluir videos sueltos en la raíz
-*.mp4
 
 # Archivos de diseño (Photoshop, ZIPs)
 robots/
