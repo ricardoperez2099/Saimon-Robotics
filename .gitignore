@@ -1,0 +1,11 @@
+# Excluir carpeta de videos
+videos/
+
+# Excluir videos sueltos en la raíz
+*.mp4
+
+# Archivos de diseño (Photoshop, ZIPs)
+robots/
+
+# macOS
+.DS_Store
