@@ -1,8 +1,34 @@
-# Excluir carpeta de videos de stock
-videos/
-
-# Archivos de diseño (Photoshop, ZIPs)
-robots/
-
 # macOS
 .DS_Store
+
+# Working dumps — not part of the live site
+material/
+Ficha SR-K9 UI mockups/
+.cursor/
+
+# Extra videos (keep the hero)
+videos/*
+!videos/bg-hero.mp4
+
+# Unused logo copies
+imagenes/logo_saimon_robotics.png
+imagenes/logo_saimon_robotics_blanco.png
+
+# Unused generated robot renders and duplicates
+robots/**/hf_*
+!robots/entrega 2/hf_20260812_220448_19b0b526-39d0-4fc0-939b-df4077b2734c.png
+!robots/hosteleria/hf_20260812_223301_599aca91-1f23-4d10-b9a8-c252a92ebfba.png
+!robots/Medico/hf_20260812_225840_5d03719b-bfd8-471c-83bd-145b258dfe6d.png
+robots/humanoide/
+robots/entrega/
+robots/carro.png
+robots/perro robot/bg-hero.mp4
+robots/perro robot/categoria-perro-robot.png
+robots/perro robot/perro robot.png
+robots/perro robot/perro-1.png
+robots/perro robot/perro_robot.png
+robots/Medico/medico-1.png
+robots/alta carga/Robot_arm_2.png
+robots/entrega 2/entrega-1.png
+robots/hosteleria/hosteleria-1.png
+robots/alta carga/hf_*
