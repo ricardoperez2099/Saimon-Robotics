@@ -147,7 +147,7 @@
       </a>
       <a href="#robosector" class="mega-card nav-scroll" role="menuitem">
         <span class="mega-card-media">
-          <img src="robots/entrega 2/hf_20260812_220448_19b0b526-39d0-4fc0-939b-df4077b2734c.png" alt="SR-GO">
+          <img src="robots/entrega 2/sr-go.jpg" alt="SR-GO">
         </span>
         <span class="mega-card-label">
           SR-GO
@@ -156,7 +156,7 @@
       </a>
       <a href="#robosector" class="mega-card nav-scroll" role="menuitem">
         <span class="mega-card-media">
-          <img src="robots/hosteleria/hf_20260812_223301_599aca91-1f23-4d10-b9a8-c252a92ebfba.png" alt="SR-HOST">
+          <img src="robots/hosteleria/sr-host.jpg" alt="SR-HOST">
         </span>
         <span class="mega-card-label">
           SR-HOST
@@ -165,7 +165,7 @@
       </a>
       <a href="#robosector" class="mega-card nav-scroll" role="menuitem">
         <span class="mega-card-media">
-          <img src="robots/alta carga/alta-carga1.png" alt="SR-LIFT">
+          <img src="robots/alta carga/alta-carga1.jpg" alt="SR-LIFT">
         </span>
         <span class="mega-card-label">
           SR-LIFT
@@ -205,7 +205,7 @@
 <!-- ═══ HERO ════════════════════════════════════════════════════ -->
 <section class="hero" id="hero">
   <!-- Video background -->
-  <video class="hero-video" autoplay loop muted playsinline>
+  <video class="hero-video" autoplay loop muted playsinline webkit-playsinline preload="auto">
     <source src="videos/bg-hero.mp4" type="video/mp4">
   </video>
   <div class="hero-video-overlay"></div>
@@ -310,7 +310,7 @@
         </a>
 
         <article class="model-card" data-model="SR-GO">
-          <img src="robots/entrega 2/hf_20260812_220448_19b0b526-39d0-4fc0-939b-df4077b2734c.png" alt="SR-GO" loading="lazy">
+          <img src="robots/entrega 2/sr-go.jpg" alt="SR-GO" loading="lazy">
           <div class="model-card-fade"></div>
           <div class="model-card-meta">
             <span class="model-card-id">SR-GO</span>
@@ -319,7 +319,7 @@
         </article>
 
         <article class="model-card" data-model="SR-HOST">
-          <img src="robots/hosteleria/hf_20260812_223301_599aca91-1f23-4d10-b9a8-c252a92ebfba.png" alt="SR-HOST" loading="lazy">
+          <img src="robots/hosteleria/sr-host.jpg" alt="SR-HOST" loading="lazy">
           <div class="model-card-fade"></div>
           <div class="model-card-meta">
             <span class="model-card-id">SR-HOST</span>
@@ -328,7 +328,7 @@
         </article>
 
         <article class="model-card" data-model="SR-LIFT">
-          <img src="robots/alta carga/alta-carga1.png" alt="SR-LIFT" loading="lazy">
+          <img src="robots/alta carga/alta-carga1.jpg" alt="SR-LIFT" loading="lazy">
           <div class="model-card-fade"></div>
           <div class="model-card-meta">
             <span class="model-card-id">SR-LIFT</span>
@@ -1201,6 +1201,7 @@
     body.classList.remove('is-intro');
     body.classList.add('intro-done');
     document.documentElement.classList.remove('is-intro');
+    window.dispatchEvent(new Event('saimon:intro-done'));
   }
 
   function revealUI() {
@@ -1237,6 +1238,7 @@
     setTimeout(() => {
       intro.classList.add('is-exit');
       revealUI();
+      window.dispatchEvent(new Event('saimon:intro-done'));
     }, 3800);
 
     // 5) Unlock
@@ -1777,6 +1779,7 @@ if (langBtn) {
 <script src="mega-menu.js"></script>
 <script src="scale-pin.js"></script>
 <script src="cart.js"></script>
+<script src="autoplay-hero.js"></script>
 <script src="chatbot.js"></script>
 <script src="back-to-top.js"></script>
 </body>

@@ -3,9 +3,9 @@
   const THUMBS = {
     'SR-K9': 'robots/perro robot/tres-cuartos-frontal.png',
     'DBS02-X': 'imagenes/humanoide-frente.png',
-    'SR-GO': 'robots/entrega 2/hf_20260812_220448_19b0b526-39d0-4fc0-939b-df4077b2734c.png',
-    'SR-HOST': 'robots/hosteleria/hf_20260812_223301_599aca91-1f23-4d10-b9a8-c252a92ebfba.png',
-    'SR-LIFT': 'robots/alta carga/alta-carga1.png',
+    'SR-GO': 'robots/entrega 2/sr-go.jpg',
+    'SR-HOST': 'robots/hosteleria/sr-host.jpg',
+    'SR-LIFT': 'robots/alta carga/alta-carga1.jpg',
     'SR-MED': 'robots/Medico/hf_20260812_225840_5d03719b-bfd8-471c-83bd-145b258dfe6d.png'
   };
 
