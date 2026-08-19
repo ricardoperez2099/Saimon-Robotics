@@ -359,23 +359,23 @@
       <div class="ficha-gallery-viewport" id="fichaGalleryViewport">
         <div class="ficha-gallery-track" id="fichaGalleryTrack">
           <figure class="ficha-gallery-item is-on">
-            <img src="robots/perro robot/tres-cuartos-frontal.png" alt="Tres cuartos frontal" loading="lazy">
+            <img src="robots/perro robot/tres-cuartos-frontal.jpg" alt="Tres cuartos frontal" loading="eager" fetchpriority="high" decoding="async">
             <figcaption>Tres cuartos frontal — estudio blanco</figcaption>
           </figure>
           <figure class="ficha-gallery-item">
-            <img src="robots/perro robot/detalle-navy.jpg" alt="Close-up de sensores" loading="lazy">
+            <img src="robots/perro robot/detalle-navy.jpg" alt="Close-up de sensores" decoding="async">
             <figcaption>Close-up del clúster de sensores</figcaption>
           </figure>
           <figure class="ficha-gallery-item">
-            <img src="robots/perro robot/perfil-lateral.png" alt="Perfil lateral" loading="lazy">
+            <img src="robots/perro robot/perfil-lateral.jpg" alt="Perfil lateral" decoding="async">
             <figcaption>Perfil lateral — chasis y articulaciones</figcaption>
           </figure>
           <figure class="ficha-gallery-item">
-            <img src="robots/perro robot/tres-cuartos-posterior.png" alt="Tres cuartos posterior" loading="lazy">
+            <img src="robots/perro robot/tres-cuartos-posterior.jpg" alt="Tres cuartos posterior" decoding="async">
             <figcaption>Tres cuartos posterior</figcaption>
           </figure>
           <figure class="ficha-gallery-item">
-            <img src="robots/perro robot/white-studio.jpg" alt="Vista frontal" loading="lazy">
+            <img src="robots/perro robot/white-studio.jpg" alt="Vista frontal" decoding="async">
             <figcaption>Vista frontal — estudio navy</figcaption>
           </figure>
         </div>
@@ -869,6 +869,8 @@
   let jumping = false;
   let timer = 0;
 
+  primeGalleryImages();
+
   function galleryMetrics() {
     const item = items[0];
     const slideW = item.getBoundingClientRect().width;
@@ -1000,6 +1002,19 @@
     }
   };
 
+  function assetUrl(path) {
+    return encodeURI(path);
+  }
+
+  function primeGalleryImages() {
+    items.forEach(function (item) {
+      const img = item.querySelector('img');
+      if (!img) return;
+      const src = img.getAttribute('src');
+      if (src) img.src = assetUrl(src);
+    });
+  }
+
   const videoWrap = document.getElementById('fichaVideo');
   const video = videoWrap?.querySelector('video');
   const videoSource = video?.querySelector('source');
@@ -1020,13 +1035,18 @@
     video.pause();
     videoWrap.classList.remove('is-playing');
     video.currentTime = 0;
-    poster.src = clip.poster;
+    poster.src = assetUrl(clip.poster);
     poster.alt = clip.alt;
-    video.poster = clip.poster;
-    videoSource.src = clip.src;
+    video.poster = assetUrl(clip.poster);
+    videoSource.src = assetUrl(clip.src);
     video.load();
     if (label) label.textContent = 'VIDEO';
   }
+
+  video?.addEventListener('error', () => {
+    videoWrap.classList.remove('is-playing');
+    if (label) label.textContent = 'VIDEO NO DISPONIBLE';
+  });
 
   video?.addEventListener('loadedmetadata', () => {
     if (label) label.textContent = formatDuration(video.duration);
