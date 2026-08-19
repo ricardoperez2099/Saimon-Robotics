@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SR-K9 Series — Categoría | Saimon Robotics</title>
+  <meta name="description" content="Cuatro configuraciones del cuadrúpedo SR-K9 para patrullaje, inspección industrial y operaciones en interiores.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="categoria.css">
+</head>
+<body class="categoria-page">
+
+<nav class="navbar" id="navbar">
+  <a href="index.html#hero" class="nav-logo">
+    <img src="imagenes/logo saimon robotics.png" alt="Saimon Robotics">
+  </a>
+
+  <div class="nav-main">
+    <div class="nav-center">
+      <button class="nav-btn" type="button" data-mega="solutions" aria-expanded="false" aria-haspopup="true" aria-controls="mega-solutions">
+        Soluciones
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="nav-btn" type="button" data-mega="categories" aria-expanded="false" aria-haspopup="true" aria-controls="mega-categories">
+        Categorías
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="nav-btn" href="index.html#noticias">Noticias</a>
+      <button class="nav-btn nav-btn-accent" type="button" data-mega="robots" aria-expanded="false" aria-haspopup="true" aria-controls="mega-robots">
+        Robots
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <div class="nav-actions">
+      <button type="button" class="nav-pill nav-pill-primary" data-open-contact>
+        Contacto
+        <span class="nav-pill-icon" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </button>
+      <button class="cart-btn" id="cartOpenBtn" type="button" aria-label="Carrito">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="lang-btn" type="button">EN</button>
+    </div>
+  </div>
+
+  <button class="nav-hamburger" id="hamburgerBtn" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mega-menu" id="mega-solutions" role="menu" aria-label="Soluciones">
+  <div class="mega-menu-inner">
+    <div class="mega-cards">
+      <a href="index.html#robosector" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_alta_carga.png" alt="RoboSector">
+        </span>
+        <span class="mega-card-label">
+          RoboSector
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#saimondeploy" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/yellow-robotic-arm-carry-cardboard-box-warehouse.jpg" alt="SaimonDeploy">
+        </span>
+        <span class="mega-card-label">
+          SaimonDeploy
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#saimoniq" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/sistema-monitoreo.png" alt="Sistema de monitoreo Saimon">
+        </span>
+        <span class="mega-card-label">
+          Sistema de monitoreo Saimon
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+    </div>
+    <aside class="mega-aside">
+      <p>¿Buscas algo específico?</p>
+      <a href="mailto:contacto@saimonrobotics.com">contacto@saimonrobotics.com</a>
+    </aside>
+  </div>
+</div>
+
+<div class="mega-menu" id="mega-categories" role="menu" aria-label="Categorías">
+  <div class="mega-menu-inner">
+    <div class="mega-cards mega-cards--categories">
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_humanoide.png" alt="Humanoide">
+        </span>
+        <span class="mega-card-label">
+          Humanoide
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="categoria-sr-k9.html" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria-perro-robot.png" alt="Perros robot">
+        </span>
+        <span class="mega-card-label">
+          Perros Robot
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_logistica.png" alt="Logística">
+        </span>
+        <span class="mega-card-label">
+          Logística
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_hosteleria.png" alt="Hostelería">
+        </span>
+        <span class="mega-card-label">
+          Hostelería
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_alta_carga.png" alt="Alta carga">
+        </span>
+        <span class="mega-card-label">
+          Alta Carga
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_medicina.png" alt="Médico">
+        </span>
+        <span class="mega-card-label">
+          Médico
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_seguridad.png" alt="Seguridad">
+        </span>
+        <span class="mega-card-label">
+          Seguridad
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+    </div>
+    <aside class="mega-aside">
+      <p>Explora por tipo de operación</p>
+      <a href="index.html#compras">Ver todas las categorías</a>
+      <a href="mailto:contacto@saimonrobotics.com">contacto@saimonrobotics.com</a>
+    </aside>
+  </div>
+</div>
+
+<div class="mega-menu" id="mega-robots" role="menu" aria-label="Robots">
+  <div class="mega-menu-inner">
+    <div class="mega-cards">
+      <a href="categoria-sr-k9.html" class="mega-card" role="menuitem" aria-label="Ver categoría SR-K9">
+        <span class="mega-card-media">
+          <img src="robots/perro robot/tres-cuartos-frontal.png" alt="SR-K9">
+        </span>
+        <span class="mega-card-label">
+          SR-K9
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#robosector" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/humanoide-frente.png" alt="DBS02-X">
+        </span>
+        <span class="mega-card-label">
+          DBS02-X
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#robosector" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="robots/entrega 2/sr-go.jpg" alt="SR-GO">
+        </span>
+        <span class="mega-card-label">
+          SR-GO
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#robosector" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="robots/hosteleria/sr-host.jpg" alt="SR-HOST">
+        </span>
+        <span class="mega-card-label">
+          SR-HOST
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#robosector" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="robots/alta carga/alta-carga1.jpg" alt="SR-LIFT">
+        </span>
+        <span class="mega-card-label">
+          SR-LIFT
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#robosector" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="robots/Medico/hf_20260812_225840_5d03719b-bfd8-471c-83bd-145b258dfe6d.png" alt="SR-MED">
+        </span>
+        <span class="mega-card-label">
+          SR-MED
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+    </div>
+    <aside class="mega-aside">
+      <p>¿Buscas algo específico?</p>
+      <a href="index.html#robosector">Ver catálogo de robots</a>
+      <a href="mailto:contacto@saimonrobotics.com">contacto@saimonrobotics.com</a>
+    </aside>
+  </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#robosector" class="mobile-link">RoboSector</a>
+  <a href="index.html#saimondeploy" class="mobile-link">SaimonDeploy</a>
+  <a href="index.html#saimoniq" class="mobile-link">Sistema de monitoreo Saimon</a>
+  <a href="index.html#robosector" class="mobile-link">Robots</a>
+  <a href="index.html#compras" class="mobile-link">Categorías</a>
+  <a href="index.html#noticias" class="mobile-link">Noticias</a>
+  <button type="button" class="mobile-link" data-open-contact>Contacto</button>
+  <button type="button" class="mobile-link mobile-link-cta" data-open-contact>Contacto</button>
+</div>
+
+<main class="categoria">
+  <div class="cat-wrap">
+
+    <section class="cat-hero">
+      <img class="cat-hero-media" id="catHeroImg" src="imagenes/categoria-sr-k9/hero-patrullaje.jpg" alt="Línea SR-K9 en terreno abierto al atardecer">
+      <div class="cat-hero-shade"></div>
+      <div class="cat-hero-inner">
+        <span class="cat-hero-eyebrow">ROBOSECTOR · CUADRÚPEDOS</span>
+        <h1 class="cat-hero-title">SR&#8209;K9 SERIES</h1>
+        <p class="cat-hero-lead">Cuatro configuraciones de un mismo cuerpo cuadrúpedo, para cada terreno y operación.</p>
+        <div class="cat-pill-group cat-pill-group--hero" id="catHeroTabs"></div>
+      </div>
+    </section>
+
+    <section class="cat-models">
+      <div class="cat-models-grid">
+        <a class="cat-model-card" href="ficha-sr-k9.html">
+          <img src="imagenes/categoria-sr-k9/model-pro.jpg" alt="SR-K9 Pro" loading="lazy">
+          <div class="cat-model-shade"></div>
+          <div class="cat-model-copy">
+            <span class="cat-model-tagline">Patrullaje ágil</span>
+            <h3 class="cat-model-name">SR-K9 Pro</h3>
+          </div>
+        </a>
+        <a class="cat-model-card" href="ficha-sr-k9.html">
+          <img src="imagenes/categoria-sr-k9/model-compact.jpg" alt="SR-K9 Compact" loading="lazy">
+          <div class="cat-model-shade"></div>
+          <div class="cat-model-copy">
+            <span class="cat-model-tagline">Uso en interiores</span>
+            <h3 class="cat-model-name">SR-K9 Compact</h3>
+          </div>
+        </a>
+        <a class="cat-model-card" href="ficha-sr-k9.html">
+          <img src="robots/perro robot/card-sr-k9-max.png" alt="SR-K9 Max" loading="lazy">
+          <div class="cat-model-shade"></div>
+          <div class="cat-model-copy">
+            <span class="cat-model-tagline">Inspección industrial</span>
+            <h3 class="cat-model-name">SR-K9 Max</h3>
+          </div>
+        </a>
+        <a class="cat-model-card" href="ficha-sr-k9.html">
+          <img src="robots/perro robot/card-sr-k9-industrial.png" alt="SR-K9 Industrial" loading="lazy">
+          <div class="cat-model-shade"></div>
+          <div class="cat-model-copy">
+            <span class="cat-model-tagline">Campo extremo</span>
+            <h3 class="cat-model-name">SR-K9 Industrial</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="cat-compare" id="catCompare">
+      <div class="cat-compare-inner">
+        <h2 class="cat-compare-title">Comparaciones de modelos SR&#8209;K9</h2>
+        <div class="cat-pill-group" id="catUseCaseTabs"></div>
+        <div class="cat-compare-table-wrap">
+          <div class="cat-compare-table">
+            <div class="cat-compare-head-spacer"></div>
+            <div id="catCompareHead" style="display:contents"></div>
+            <div id="catCompareBody" style="display:contents"></div>
+          </div>
+        </div>
+        <p class="cat-compare-note">Modelos y especificaciones simulados/ilustrativos hasta confirmación del catálogo real.</p>
+      </div>
+    </section>
+
+    <section class="cat-discover">
+      <div class="cat-discover-inner">
+        <h2 class="cat-discover-title">Descubre más</h2>
+        <div class="cat-discover-grid">
+          <article class="cat-discover-card">
+            <img src="imagenes/categoria-sr-k9/accesorios.jpg" alt="Accesorios SR-K9: baterías y arneses de carga" loading="lazy">
+            <div class="cat-discover-shade"></div>
+            <div class="cat-discover-copy">
+              <h3>Accesorios</h3>
+              <p>Baterías de intercambio, estaciones de carga y arneses de carga útil para tu flota SR&#8209;K9.</p>
+            </div>
+          </article>
+          <article class="cat-discover-card">
+            <img src="imagenes/categoria-sr-k9/care.jpg" alt="Técnico dando soporte a un robot SR-K9" loading="lazy">
+            <div class="cat-discover-shade"></div>
+            <div class="cat-discover-copy">
+              <h3>RoboAlliance Care</h3>
+              <p>Plan de soporte y mantenimiento extendido para tu flota, con reemplazo prioritario de piezas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat-support">
+      <video class="cat-support-bg" autoplay loop muted playsinline webkit-playsinline preload="auto" aria-label="Equipo de soporte Saimon Robotics">
+        <source src="videos/0819.mp4" type="video/mp4">
+      </video>
+      <div class="cat-support-shade"></div>
+      <div class="cat-support-inner">
+        <div class="cat-support-brand">
+          <span></span>
+          <span>ROBOAlliance</span>
+        </div>
+        <h2 class="cat-support-title">Un mismo equipo para toda tu operación</h2>
+        <p class="cat-support-lead">Del diagnóstico en sitio a la documentación técnica, un solo punto de contacto para mantener tu flota SR&#8209;K9 operando.</p>
+      </div>
+    </section>
+
+    <section class="cat-quick">
+      <div class="cat-quick-inner">
+        <button type="button" class="cat-quick-item" data-open-contact>
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--navy-main)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"></rect><path d="M8 6V4h8v2M12 10v4M9 12l3 2 3-2"></path></svg>
+          <span>Cotizar</span>
+        </button>
+        <a class="cat-quick-item" href="index.html#saimoniq">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--navy-main)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9.5a2.5 2.5 0 0 1 4.9.8c0 1.7-2.4 2-2.4 3.4"></path><circle cx="12" cy="17" r=".4" fill="var(--navy-main)"></circle></svg>
+          <span>Asistencia</span>
+        </a>
+        <a class="cat-quick-item" href="index.html#saimondeploy">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--navy-main)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z"></path><path d="M9.5 12l1.8 1.8L15 10"></path></svg>
+          <span>Despliegue seguro</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="margin-bottom:20px;">
+          <span style="font-size:22px;font-weight:900;color:#fff;letter-spacing:1px;">SAIMON<span style="color:var(--accent);">ROBOTICS</span></span>
+        </div>
+        <p class="footer-desc">La plataforma B2B líder en venta, renta y capacitación de robots industriales para Latinoamérica. Parte de Seguritech Privada S.A. de C.V.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Soluciones</div>
+        <div class="footer-links">
+          <a href="index.html#robosector" class="footer-link">RoboSector</a>
+          <a href="index.html#saimondeploy" class="footer-link">SaimonDeploy</a>
+          <a href="index.html#saimoniq" class="footer-link">Sistema de monitoreo Saimon</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Empresa</div>
+        <div class="footer-links">
+          <a href="index.html#noticias" class="footer-link">Noticias</a>
+          <a href="index.html#compras" class="footer-link">Categorías</a>
+          <button type="button" class="footer-link" data-open-contact>Contacto</button>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Newsletter</div>
+        <p class="footer-newsletter-desc">Recibe las últimas novedades en robótica industrial y ofertas exclusivas.</p>
+        <div class="newsletter-form" style="margin-top:14px;">
+          <input type="email" class="newsletter-input" placeholder="tu@correo.com">
+          <button class="newsletter-btn" type="button">Suscribir</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Saimon Robotics — Seguritech Privada S.A. de C.V. Todos los derechos reservados.</p>
+      <div class="footer-legal">
+        <a href="#" class="footer-legal-link">Privacidad</a>
+        <a href="#" class="footer-legal-link">Términos</a>
+        <a href="#" class="footer-legal-link">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-sidebar" id="cartSidebar" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+  <div class="cart-header">
+    <div class="cart-title" id="cartTitle">Tu cotización</div>
+    <button class="cart-close" type="button" onclick="closeCart()" aria-label="Cerrar">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty" id="cartEmpty">Tu cotización está vacía.<br>Agrega un modelo para comenzar.</div>
+    <div id="cartItems"></div>
+  </div>
+  <div class="cart-footer" id="cartFooter">
+    <p class="cart-footer-note" id="cartCountNote">0 modelos en tu cotización</p>
+    <div class="cart-totals" id="cartTotals"></div>
+    <button class="cart-cta" type="button" onclick="openCheckout()">Continuar</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+  <div class="modal contact-modal">
+    <div class="modal-header">
+      <div class="modal-title" id="contactModalTitle">Cotiza Tu Proyecto</div>
+      <button class="modal-close" type="button" onclick="closeContactModal()" aria-label="Cerrar">×</button>
+    </div>
+    <div class="modal-body contact-modal-body">
+      <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-input" placeholder="Tu nombre completo" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Empresa</label>
+            <input type="text" class="form-input" placeholder="Nombre de tu empresa" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" placeholder="correo@empresa.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Teléfono</label>
+            <input type="tel" class="form-input" placeholder="+52 55 0000 0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Mensaje</label>
+          <textarea class="form-input form-textarea" placeholder="Me interesa el SR-K9..."></textarea>
+        </div>
+        <button type="submit" class="btn-accent" style="width:100%;justify-content:center;">
+          Enviar Solicitud
+        </button>
+      </form>
+      <aside class="contact-modal-aside">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Dirección</div>
+              <div class="contact-info-val">Av. Insurgentes Sur 1267, Piso 14<br>Col. Tlacoquemécatl, Ciudad de México</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A6BB0" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.02 2.82 2 2 0 012 .66h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.5a16 16 0 006.29 6.29l1.36-1.16a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Teléfono</div>
+              <div class="contact-info-val">+52 55 9000 0000<br>Lun–Vie, 9am–7pm CT</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A6BB0" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-val">contacto@saimonrobotics.com<br>oscar.mendoza@saimonrobotics.com</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  const hamburger = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  }
+
+  window.openContactModal = function () {
+    document.getElementById('contactModal')?.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    mobileMenu?.classList.remove('open');
+  };
+  window.closeContactModal = function () {
+    document.getElementById('contactModal')?.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  document.querySelectorAll('[data-open-contact]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openContactModal();
+    });
+  });
+  document.getElementById('contactModal')?.addEventListener('click', function (e) {
+    if (e.target === this) closeContactModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeContactModal();
+  });
+
+  window.handleFormSubmit = function (e) {
+    e.preventDefault();
+    const btn = e.target.querySelector('button[type="submit"]');
+    const orig = btn.textContent;
+    btn.textContent = '¡Enviado! ✓';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.textContent = orig;
+      btn.disabled = false;
+      e.target.reset();
+      closeContactModal();
+    }, 1800);
+  };
+})();
+</script>
+
+<div class="chatbot-fab" id="chatbotFab">
+  <div class="chatbot-tooltip" id="chatbotTooltip" style="display:none;">¿Necesitas ayuda?</div>
+  <button class="chatbot-btn" onclick="toggleChatbot()" aria-label="Chat">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  </button>
+</div>
+
+<div class="site-fabs" id="siteFabs">
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+</div>
+
+<script src="autoplay-hero.js"></script>
+<script src="mega-menu.js"></script>
+<script src="cart.js"></script>
+<script src="chatbot.js"></script>
+<script src="back-to-top.js"></script>
+<script src="categoria-sr-k9.js"></script>
+</body>
+</html>

@@ -21,9 +21,11 @@
         Soluciones
         <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <a class="nav-btn" href="index.html#compras">Compras</a>
+      <button class="nav-btn" type="button" data-mega="categories" aria-expanded="false" aria-haspopup="true" aria-controls="mega-categories">
+        Categorías
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
       <a class="nav-btn" href="index.html#noticias">Noticias</a>
-      <button class="nav-btn" type="button" data-open-contact>Contacto</button>
       <button class="nav-btn nav-btn-accent" type="button" data-mega="robots" aria-expanded="false" aria-haspopup="true" aria-controls="mega-robots">
         Robots
         <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -88,10 +90,85 @@
   </div>
 </div>
 
+<div class="mega-menu" id="mega-categories" role="menu" aria-label="Categorías">
+  <div class="mega-menu-inner">
+    <div class="mega-cards mega-cards--categories">
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_humanoide.png" alt="Humanoide">
+        </span>
+        <span class="mega-card-label">
+          Humanoide
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="categoria-sr-k9.html" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria-perro-robot.png" alt="Perros robot">
+        </span>
+        <span class="mega-card-label">
+          Perros Robot
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_logistica.png" alt="Logística">
+        </span>
+        <span class="mega-card-label">
+          Logística
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_hosteleria.png" alt="Hostelería">
+        </span>
+        <span class="mega-card-label">
+          Hostelería
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_alta_carga.png" alt="Alta carga">
+        </span>
+        <span class="mega-card-label">
+          Alta Carga
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_medicina.png" alt="Médico">
+        </span>
+        <span class="mega-card-label">
+          Médico
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="index.html#compras" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_seguridad.png" alt="Seguridad">
+        </span>
+        <span class="mega-card-label">
+          Seguridad
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+    </div>
+    <aside class="mega-aside">
+      <p>Explora por tipo de operación</p>
+      <a href="index.html#compras">Ver todas las categorías</a>
+      <a href="mailto:contacto@saimonrobotics.com">contacto@saimonrobotics.com</a>
+    </aside>
+  </div>
+</div>
+
 <div class="mega-menu" id="mega-robots" role="menu" aria-label="Robots">
   <div class="mega-menu-inner">
     <div class="mega-cards">
-      <a href="ficha-sr-k9.html" class="mega-card" role="menuitem" aria-label="Ver ficha del SR-K9">
+      <a href="categoria-sr-k9.html" class="mega-card" role="menuitem" aria-label="Ver categoría SR-K9">
         <span class="mega-card-media">
           <img src="robots/perro robot/tres-cuartos-frontal.png" alt="SR-K9">
         </span>
@@ -159,7 +236,7 @@
   <a href="index.html#saimondeploy" class="mobile-link">SaimonDeploy</a>
   <a href="index.html#saimoniq" class="mobile-link">Sistema de monitoreo Saimon</a>
   <a href="index.html#robosector" class="mobile-link">Robots</a>
-  <a href="index.html#compras" class="mobile-link">Compras</a>
+  <a href="index.html#compras" class="mobile-link">Categorías</a>
   <a href="index.html#noticias" class="mobile-link">Noticias</a>
   <button type="button" class="mobile-link" data-open-contact>Contacto</button>
   <button type="button" class="mobile-link mobile-link-cta" data-open-contact>Contacto</button>
@@ -426,7 +503,7 @@
 
     <section class="ficha-support">
       <div class="ficha-support-grid">
-        <a href="#fichaCompare">
+        <a href="categoria-sr-k9.html#catCompare">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--navy-main)" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h7M4 17h7M17 4v16M14 7l3-3 3 3M20 17l-3 3-3-3"></path></svg>
           Comparar modelos
         </a>
@@ -539,7 +616,7 @@
         <div class="footer-col-title">Empresa</div>
         <div class="footer-links">
           <a href="index.html#noticias" class="footer-link">Noticias</a>
-          <a href="index.html#compras" class="footer-link">Compras</a>
+          <a href="index.html#compras" class="footer-link">Categorías</a>
           <button type="button" class="footer-link" data-open-contact>Contacto</button>
         </div>
       </div>

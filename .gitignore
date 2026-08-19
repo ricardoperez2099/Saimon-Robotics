@@ -4,11 +4,13 @@
 # Working dumps — not part of the live site
 material/
 Ficha SR-K9 UI mockups/
+Categoria SR-K9/
 .cursor/
 
 # Extra videos (keep the hero)
 videos/*
 !videos/bg-hero.mp4
+!videos/0819.mp4
 
 # Unused logo copies
 imagenes/logo_saimon_robotics.png

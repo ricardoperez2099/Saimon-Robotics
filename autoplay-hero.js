@@ -1,5 +1,5 @@
 (function () {
-  var SELECTOR = 'video.hero-video, video.ficha-hero-media';
+  var SELECTOR = 'video.hero-video, video.ficha-hero-media, video.cat-support-bg';
 
   function play(video) {
     if (!video) return;

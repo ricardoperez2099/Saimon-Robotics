@@ -57,9 +57,11 @@
         Soluciones
         <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <button class="nav-btn nav-scroll" data-target="compras">Compras</button>
+      <button class="nav-btn" type="button" data-mega="categories" aria-expanded="false" aria-haspopup="true" aria-controls="mega-categories">
+        Categorías
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
       <button class="nav-btn nav-scroll" data-target="noticias">Noticias</button>
-      <button class="nav-btn" type="button" data-open-contact>Contacto</button>
       <button class="nav-btn nav-btn-accent" type="button" data-mega="robots" aria-expanded="false" aria-haspopup="true" aria-controls="mega-robots">
         Robots
         <svg width="10" height="10" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -124,10 +126,85 @@
   </div>
 </div>
 
+<div class="mega-menu" id="mega-categories" role="menu" aria-label="Categorías">
+  <div class="mega-menu-inner">
+    <div class="mega-cards mega-cards--categories">
+      <a href="#compras" class="mega-card nav-scroll" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_humanoide.png" alt="Humanoide">
+        </span>
+        <span class="mega-card-label">
+          Humanoide
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="categoria-sr-k9.html" class="mega-card" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria-perro-robot.png" alt="Perros robot">
+        </span>
+        <span class="mega-card-label">
+          Perros Robot
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="#compras" class="mega-card nav-scroll" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_logistica.png" alt="Logística">
+        </span>
+        <span class="mega-card-label">
+          Logística
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="#compras" class="mega-card nav-scroll" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_hosteleria.png" alt="Hostelería">
+        </span>
+        <span class="mega-card-label">
+          Hostelería
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="#compras" class="mega-card nav-scroll" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_alta_carga.png" alt="Alta carga">
+        </span>
+        <span class="mega-card-label">
+          Alta Carga
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="#compras" class="mega-card nav-scroll" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_medicina.png" alt="Médico">
+        </span>
+        <span class="mega-card-label">
+          Médico
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+      <a href="#compras" class="mega-card nav-scroll" role="menuitem">
+        <span class="mega-card-media">
+          <img src="imagenes/categoria_seguridad.png" alt="Seguridad">
+        </span>
+        <span class="mega-card-label">
+          Seguridad
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
+    </div>
+    <aside class="mega-aside">
+      <p>Explora por tipo de operación</p>
+      <a href="#compras" class="nav-scroll">Ver todas las categorías</a>
+      <a href="mailto:contacto@saimonrobotics.com">contacto@saimonrobotics.com</a>
+    </aside>
+  </div>
+</div>
+
 <div class="mega-menu" id="mega-robots" role="menu" aria-label="Robots">
   <div class="mega-menu-inner">
     <div class="mega-cards">
-      <a href="ficha-sr-k9.html" class="mega-card" role="menuitem" aria-label="Ver ficha del SR-K9">
+      <a href="categoria-sr-k9.html" class="mega-card" role="menuitem" aria-label="Ver categoría SR-K9">
         <span class="mega-card-media">
           <img src="robots/perro robot/tres-cuartos-frontal.png" alt="SR-K9">
         </span>
@@ -196,7 +273,7 @@
   <a href="#saimondeploy" class="mobile-link nav-scroll">SaimonDeploy</a>
   <a href="#saimoniq" class="mobile-link nav-scroll">Sistema de monitoreo Saimon</a>
   <a href="#robosector" class="mobile-link nav-scroll">Robots</a>
-  <a href="#compras" class="mobile-link nav-scroll">Compras</a>
+  <a href="#compras" class="mobile-link nav-scroll">Categorías</a>
   <a href="#noticias" class="mobile-link nav-scroll">Noticias</a>
   <button type="button" class="mobile-link" data-open-contact>Contacto</button>
   <button type="button" class="mobile-link mobile-link-cta" data-open-contact>Contacto</button>
@@ -439,13 +516,13 @@
           </div>
         </article>
 
-        <article class="cat-card" data-cat="perros">
+        <a class="cat-card" href="categoria-sr-k9.html" data-cat="perros">
           <img src="imagenes/categoria-perro-robot.png" alt="Perros robot" loading="lazy">
           <div class="cat-card-label">
             <strong>Perros Robot</strong>
             <span>Inspección y patrullaje</span>
           </div>
-        </article>
+        </a>
 
         <article class="cat-card" data-cat="logistica">
           <img src="imagenes/categoria_logistica.png" alt="Logística" loading="lazy">
@@ -801,7 +878,7 @@
         <div class="footer-col-title">Empresa</div>
         <div class="footer-links">
           <a href="#noticias" class="footer-link nav-scroll">Noticias</a>
-          <a href="#compras" class="footer-link nav-scroll">Compras</a>
+          <a href="#compras" class="footer-link nav-scroll">Categorías</a>
           <button type="button" class="footer-link" data-open-contact>Contacto</button>
         </div>
       </div>
@@ -1568,7 +1645,12 @@ if (location.hash === '#contacto') {
   });
 
   items.forEach((el, i) => {
-    el.addEventListener('click', () => { if (i !== slide) goTo(i); });
+    el.addEventListener('click', (e) => {
+      if (i !== slide) {
+        e.preventDefault();
+        goTo(i);
+      }
+    });
   });
   prevBtn?.addEventListener('click', prev);
   nextBtn?.addEventListener('click', next);
