@@ -4,13 +4,16 @@
 # Working dumps — not part of the live site
 material/
 Ficha SR-K9 UI mockups/
+Ficha DBS02-X/
 Categoria SR-K9/
 .tmp-compress/
 .cursor/
 
-# Extra videos (keep the hero)
+# Extra videos (keep the heroes)
 videos/*
 !videos/bg-hero.mp4
+!videos/bg-hero-humanoide.mp4
+!videos/bg-adaptabilidad.mp4
 !videos/0819.mp4
 
 # Unused logo copies
@@ -22,7 +25,9 @@ robots/**/hf_*
 !robots/entrega 2/hf_20260812_220448_19b0b526-39d0-4fc0-939b-df4077b2734c.png
 !robots/hosteleria/hf_20260812_223301_599aca91-1f23-4d10-b9a8-c252a92ebfba.png
 !robots/Medico/hf_20260812_225840_5d03719b-bfd8-471c-83bd-145b258dfe6d.png
-robots/humanoide/
+robots/humanoide/hf_*
+robots/humanoide/humanoide-1.png
+robots/humanoide/*.png
 robots/entrega/
 robots/carro.png
 robots/perro robot/bg-hero.mp4

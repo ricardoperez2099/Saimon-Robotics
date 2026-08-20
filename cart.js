@@ -2,7 +2,7 @@
   const STORAGE_KEY = 'saimon-quote';
   const THUMBS = {
     'SR-K9': 'robots/perro robot/tres-cuartos-frontal.png',
-    'DBS02-X': 'imagenes/humanoide-frente.png',
+    'DBS02-X': 'robots/humanoide/dbs02x-navy-front-full.jpg',
     'SR-GO': 'robots/entrega 2/sr-go.jpg',
     'SR-HOST': 'robots/hosteleria/sr-host.jpg',
     'SR-LIFT': 'robots/alta carga/alta-carga1.jpg',
