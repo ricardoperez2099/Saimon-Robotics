@@ -5,7 +5,11 @@
 material/
 Ficha SR-K9 UI mockups/
 Ficha DBS02-X/
+Ficha SR-HOST/
 Categoria SR-K9/
+Categoria DBS02-X/
+CONSIDERACIONES-SITIO.md
+Saimon Robotics Design System.md
 .tmp-compress/
 .cursor/
 
@@ -14,6 +18,7 @@ videos/*
 !videos/bg-hero.mp4
 !videos/bg-hero-humanoide.mp4
 !videos/bg-adaptabilidad.mp4
+!videos/bg-host.mp4
 !videos/0819.mp4
 
 # Unused logo copies
@@ -28,6 +33,12 @@ robots/**/hf_*
 robots/humanoide/hf_*
 robots/humanoide/humanoide-1.png
 robots/humanoide/*.png
+!robots/humanoide/bg-hero-category-humanoide.png
+!robots/humanoide/compact.png
+!robots/humanoide/pro.png
+!robots/humanoide/max.png
+!robots/humanoide/industrial.png
+!robots/humanoide/support-technician-bg.png
 robots/entrega/
 robots/carro.png
 robots/perro robot/bg-hero.mp4

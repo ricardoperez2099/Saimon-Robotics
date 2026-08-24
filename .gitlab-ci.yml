@@ -1,0 +1,25 @@
+# GitLab Pages — publica el sitio estático en una URL pública.
+# Requiere: Pages habilitado en el GitLab de Seguritech + un runner CI activo.
+
+image: alpine:3.20
+
+pages:
+  stage: deploy
+  script:
+    - mkdir -p public
+    # Copia el sitio (HTML/CSS/JS/assets) al directorio que Pages sirve.
+    - |
+      for item in *; do
+        case "$item" in
+          public|.git|.gitlab-ci.yml|.tmp-compress|.cursor) ;;
+          *) cp -R "$item" public/ ;;
+        esac
+      done
+    - test -f public/index.html
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+  # En instancias lentas o con muchos assets, evita timeout corto.
+  timeout: 30m

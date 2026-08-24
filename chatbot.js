@@ -25,7 +25,7 @@
     },
     {
       keys: ['asesor', 'contacto', 'llamar', 'email', 'hablar', 'humano'],
-      text: 'Claro. Puedes escribir a contacto@saimonrobotics.com o usar el formulario de contacto del sitio. ¿Quieres que te abra el formulario ahora?'
+      text: 'Claro. Puedes escribir a contact@saimonvision.com o usar el formulario de contacto del sitio. ¿Quieres que te abra el formulario ahora?'
     },
     {
       keys: ['soporte', 'mantenimiento', 'roboalliance', 'deploy'],
