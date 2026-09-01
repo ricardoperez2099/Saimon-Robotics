@@ -6,8 +6,10 @@ material/
 Ficha SR-K9 UI mockups/
 Ficha DBS02-X/
 Ficha SR-HOST/
+Ficha SR-GO/
 Categoria SR-K9/
 Categoria DBS02-X/
+Categoria Host/
 CONSIDERACIONES-SITIO.md
 Saimon Robotics Design System.md
 .tmp-compress/
@@ -19,6 +21,7 @@ videos/*
 !videos/bg-hero-humanoide.mp4
 !videos/bg-adaptabilidad.mp4
 !videos/bg-host.mp4
+!videos/bg-hero-mensajeria.mp4
 !videos/0819.mp4
 
 # Unused logo copies

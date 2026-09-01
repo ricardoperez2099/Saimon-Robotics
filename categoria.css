@@ -189,6 +189,10 @@
   background: var(--cat-border);
 }
 
+.cat-models-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .cat-model-card {
   position: relative;
   height: 460px;
@@ -196,6 +200,10 @@
   display: block;
   text-decoration: none;
   color: inherit;
+}
+
+.cat-models-grid--3 .cat-model-card {
+  height: 500px;
 }
 
 .cat-model-card img {
@@ -271,6 +279,11 @@
   min-width: 880px;
   display: grid;
   grid-template-columns: 180px repeat(4, 1fr);
+}
+
+.cat-compare-table--3 {
+  min-width: 680px;
+  grid-template-columns: 180px repeat(3, 1fr);
 }
 
 .cat-compare-head-spacer { grid-column: 1; }
@@ -530,6 +543,7 @@
 
 @media (max-width: 900px) {
   .cat-models-grid,
+  .cat-models-grid--3,
   .cat-discover-grid {
     grid-template-columns: 1fr;
   }
