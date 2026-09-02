@@ -1,5 +1,5 @@
 # GitLab Pages — publica el sitio estático en una URL pública.
-# Requiere: Pages habilitado en el GitLab de Seguritech + un runner CI activo.
+# Requiere: Pages habilitado en el GitLab + un runner CI activo.
 
 image: alpine:3.20
 
