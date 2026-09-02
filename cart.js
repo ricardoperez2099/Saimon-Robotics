@@ -5,7 +5,8 @@
     'DBS02-X': 'robots/humanoide/dbs02x-navy-front-full.jpg',
     'SR-GO': 'robots/entrega 2/srgo-navy-studio.png',
     'SR-HOST': 'robots/hosteleria/srhost-corridor-hotel-01.png',
-    'SR-LIFT': 'robots/alta carga/alta-carga1.jpg',
+    'SR-ARM': 'robots/alta carga/srarm-navy-hero.png',
+    'SR-LIFT': 'robots/alta carga/srarm-navy-hero.png',
     'SR-MED': 'robots/Medico/hf_20260812_225840_5d03719b-bfd8-471c-83bd-145b258dfe6d.png'
   };
 
