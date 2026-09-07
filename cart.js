@@ -7,7 +7,8 @@
     'SR-HOST': 'robots/hosteleria/srhost-corridor-hotel-01.png',
     'SR-ARM': 'robots/alta carga/srarm-navy-hero.png',
     'SR-LIFT': 'robots/alta carga/srarm-navy-hero.png',
-    'SR-MED': 'robots/Medico/hf_20260812_225840_5d03719b-bfd8-471c-83bd-145b258dfe6d.png'
+    'SR-Care': 'robots/Medico/srcare-navy-hero.png',
+    'SR-MED': 'robots/Medico/srcare-navy-hero.png'
   };
 
   function loadCart() {
