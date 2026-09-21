@@ -18,8 +18,12 @@ Categoria SR-GO/
 Categoría SR-Care/
 CONSIDERACIONES-SITIO.md
 Saimon Robotics Design System.md
+Saimon Robotics - Standalone.html
 .tmp-compress/
 .cursor/
+0621.mp4
+0622.mp4
+0623.mp4
 
 # Extra videos (keep the heroes)
 videos/*
@@ -37,9 +41,6 @@ imagenes/logo_saimon_robotics_blanco.png
 
 # Unused generated robot renders and duplicates
 robots/**/hf_*
-!robots/entrega 2/hf_20260812_220448_19b0b526-39d0-4fc0-939b-df4077b2734c.png
-!robots/hosteleria/hf_20260812_223301_599aca91-1f23-4d10-b9a8-c252a92ebfba.png
-!robots/Medico/hf_20260812_225840_5d03719b-bfd8-471c-83bd-145b258dfe6d.png
 robots/humanoide/hf_*
 robots/humanoide/humanoide-1.png
 robots/humanoide/*.png
