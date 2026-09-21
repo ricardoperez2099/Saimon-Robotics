@@ -44,6 +44,9 @@
         <span class="cart-badge" id="cartBadge">0</span>
       </button>
       <button class="lang-btn" type="button">EN</button>
+      <button type="button" class="nav-account-btn" data-open-auth aria-label="Iniciar sesión">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
     </div>
   </div>
 
@@ -147,12 +150,12 @@
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
         </span>
       </a>
-      <a href="index.html#compras" class="mega-card" role="menuitem">
+      <a href="categoria-sr-sky.html" class="mega-card" role="menuitem" aria-label="Ver categoría Drones — SR-SKY">
         <span class="mega-card-media">
-          <img src="imagenes/categoria_seguridad.png" alt="Seguridad">
+          <img src="robots/dron/srsky-navy-studio.png" alt="Drones">
         </span>
         <span class="mega-card-label">
-          Seguridad
+          Drones
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
         </span>
       </a>
@@ -222,6 +225,15 @@
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
         </span>
       </a>
+      <a href="ficha-sr-sky.html" class="mega-card" role="menuitem" aria-label="Ver ficha SR-SKY">
+        <span class="mega-card-media">
+          <img src="robots/dron/srsky-navy-studio.png" alt="SR-SKY">
+        </span>
+        <span class="mega-card-label">
+          SR-SKY
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
     </div>
     <aside class="mega-aside">
       <p>¿Buscas algo específico?</p>
@@ -238,6 +250,7 @@
   <a href="index.html#robosector" class="mobile-link">Robots</a>
   <a href="index.html#compras" class="mobile-link">Categorías</a>
   <a href="index.html#noticias" class="mobile-link">Noticias</a>
+  <button type="button" class="mobile-link" data-open-auth>Cuenta</button>
   <button type="button" class="mobile-link" data-open-contact>Contacto</button>
   <button type="button" class="mobile-link mobile-link-cta" data-open-contact>Contacto</button>
 </div>
@@ -400,9 +413,9 @@
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 Saimon Robotics. Todos los derechos reservados.</p>
       <div class="footer-legal">
-        <a href="#" class="footer-legal-link">Privacidad</a>
-        <a href="#" class="footer-legal-link">Términos</a>
-        <a href="#" class="footer-legal-link">Cookies</a>
+        <a href="aviso-privacidad.html" class="footer-legal-link">Privacidad</a>
+        <a href="terminos-condiciones.html" class="footer-legal-link">Términos</a>
+        <a href="aviso-privacidad.html#cookies" class="footer-legal-link">Cookies</a>
       </div>
     </div>
   </div>
@@ -567,6 +580,7 @@
 <script src="autoplay-hero.js"></script>
 <script src="mega-menu.js"></script>
 <script src="cart.js"></script>
+<script src="auth.js"></script>
 <script src="chatbot.js"></script>
 <script src="back-to-top.js"></script>
 <script src="categoria-sr-care.js"></script>

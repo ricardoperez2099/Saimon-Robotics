@@ -1,0 +1,304 @@
+/* ═══════════════════════════════════════════════════════════════
+   SAIMON ROBOTICS — Aviso de privacidad / páginas legales
+   ═══════════════════════════════════════════════════════════════ */
+
+.legal-page {
+  background:
+    radial-gradient(1200px 480px at 12% -10%, rgba(91, 127, 224, 0.12), transparent 60%),
+    radial-gradient(900px 420px at 100% 8%, rgba(37, 53, 109, 0.08), transparent 55%),
+    linear-gradient(180deg, #f4f6fb 0%, #ffffff 42%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.legal {
+  padding-top: 72px;
+}
+
+.legal-hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(37, 53, 109, 0.1);
+}
+
+.legal-hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-main) 55%, #2e4494 100%);
+}
+
+.legal-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 78% 30%, rgba(91, 127, 224, 0.35), transparent 42%),
+    linear-gradient(180deg, transparent 40%, rgba(12, 16, 34, 0.35) 100%);
+  opacity: 0.9;
+}
+
+.legal-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 88px 40px 72px;
+  text-align: left;
+  color: #fff;
+}
+
+.legal-eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 18px;
+}
+
+.legal-title {
+  margin: 0 0 16px;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.legal-lead {
+  margin: 0;
+  max-width: 560px;
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.legal-updated {
+  margin: 28px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.legal-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 56px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 64px 40px 112px;
+  align-items: start;
+}
+
+.legal-toc {
+  position: sticky;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.legal-toc-label {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(37, 53, 109, 0.45);
+}
+
+.legal-toc-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 1px solid rgba(37, 53, 109, 0.12);
+  padding-left: 14px;
+}
+
+.legal-toc-nav a {
+  display: block;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: rgba(37, 53, 109, 0.7);
+  text-decoration: none;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.legal-toc-nav a:hover {
+  color: var(--navy-main);
+  transform: translateX(2px);
+}
+
+.legal-toc-cta {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 14px;
+  border-radius: 8px;
+  background: var(--navy-main);
+  color: #fff !important;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: background 160ms ease;
+}
+
+.legal-toc-cta:hover {
+  background: var(--accent-hover);
+}
+
+.legal-body {
+  max-width: 720px;
+}
+
+.legal-section {
+  padding: 28px 0 32px;
+  border-bottom: 1px solid rgba(37, 53, 109, 0.08);
+  scroll-margin-top: 100px;
+}
+
+.legal-section:first-child {
+  padding-top: 0;
+}
+
+.legal-section h2 {
+  margin: 0 0 16px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-size: clamp(22px, 2.4vw, 28px);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--navy-main);
+}
+
+.legal-section h2 span {
+  flex: 0 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.legal-section p,
+.legal-section li {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 300;
+  color: rgba(19, 27, 56, 0.82);
+}
+
+.legal-section p + p,
+.legal-section p + ul {
+  margin-top: 14px;
+}
+
+.legal-section ul {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legal-section li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.legal-section li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.legal-section a {
+  color: var(--navy-main);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-section a:hover {
+  color: var(--accent);
+}
+
+.legal-section strong {
+  font-weight: 700;
+  color: var(--navy-deep);
+}
+
+.legal-footnote {
+  margin-top: 40px;
+  padding: 22px 24px;
+  border-radius: 12px;
+  background: rgba(37, 53, 109, 0.04);
+  border: 1px solid rgba(37, 53, 109, 0.08);
+}
+
+.legal-footnote p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: rgba(19, 27, 56, 0.75);
+}
+
+.legal-footnote a {
+  color: var(--navy-main);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.legal-footnote a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .legal-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 40px 24px 88px;
+  }
+
+  .legal-toc {
+    position: static;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(37, 53, 109, 0.08);
+  }
+
+  .legal-toc-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .legal-toc-nav a {
+    padding: 4px 0;
+    font-size: 12px;
+  }
+
+  .legal-toc-cta {
+    width: fit-content;
+  }
+
+  .legal-hero-inner {
+    padding: 72px 24px 56px;
+  }
+}

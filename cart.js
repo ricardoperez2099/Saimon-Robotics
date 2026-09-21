@@ -8,7 +8,8 @@
     'SR-ARM': 'robots/alta carga/srarm-navy-hero.png',
     'SR-LIFT': 'robots/alta carga/srarm-navy-hero.png',
     'SR-Care': 'robots/Medico/srcare-navy-hero.png',
-    'SR-MED': 'robots/Medico/srcare-navy-hero.png'
+    'SR-MED': 'robots/Medico/srcare-navy-hero.png',
+    'SR-SKY': 'robots/dron/srsky-navy-studio.png'
   };
 
   function loadCart() {

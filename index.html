@@ -80,6 +80,9 @@
         <span class="cart-badge" id="cartBadge">0</span>
       </button>
       <button class="lang-btn" id="langBtn">EN</button>
+      <button type="button" class="nav-account-btn" data-open-auth aria-label="Iniciar sesión">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </button>
     </div>
   </div>
 
@@ -183,12 +186,12 @@
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
         </span>
       </a>
-      <a href="#compras" class="mega-card nav-scroll" role="menuitem">
+      <a href="categoria-sr-sky.html" class="mega-card" role="menuitem" aria-label="Ver categoría Drones — SR-SKY">
         <span class="mega-card-media">
-          <img src="imagenes/categoria_seguridad.png" alt="Seguridad">
+          <img src="robots/dron/srsky-navy-studio.png" alt="Drones">
         </span>
         <span class="mega-card-label">
-          Seguridad
+          Drones
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
         </span>
       </a>
@@ -258,6 +261,15 @@
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
         </span>
       </a>
+      <a href="ficha-sr-sky.html" class="mega-card" role="menuitem" aria-label="Ver ficha SR-SKY">
+        <span class="mega-card-media">
+          <img src="robots/dron/srsky-navy-studio.png" alt="SR-SKY">
+        </span>
+        <span class="mega-card-label">
+          SR-SKY
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </span>
+      </a>
     </div>
     <aside class="mega-aside">
       <p>¿Buscas algo específico?</p>
@@ -275,6 +287,7 @@
   <a href="#robosector" class="mobile-link nav-scroll">Robots</a>
   <a href="#compras" class="mobile-link nav-scroll">Categorías</a>
   <a href="#noticias" class="mobile-link nav-scroll">Noticias</a>
+  <button type="button" class="mobile-link" data-open-auth>Cuenta</button>
   <button type="button" class="mobile-link" data-open-contact>Contacto</button>
   <button type="button" class="mobile-link mobile-link-cta" data-open-contact>Contacto</button>
 </div>
@@ -421,6 +434,15 @@
             <span class="model-card-spec">Asistencia clínica</span>
           </div>
         </a>
+
+        <a class="model-card model-card--link" href="ficha-sr-sky.html" data-model="SR-SKY" aria-label="Ver ficha del SR-SKY">
+          <img src="robots/dron/srsky-navy-studio.png" alt="SR-SKY" loading="lazy" draggable="false">
+          <div class="model-card-fade"></div>
+          <div class="model-card-meta">
+            <span class="model-card-id">SR-SKY</span>
+            <span class="model-card-spec">Vigilancia aérea</span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
@@ -556,13 +578,13 @@
           </div>
         </a>
 
-        <article class="cat-card" data-cat="seguridad">
-          <img src="imagenes/categoria_seguridad.png" alt="Seguridad" loading="lazy">
+        <a class="cat-card" href="categoria-sr-sky.html" data-cat="drones">
+          <img src="robots/dron/srsky-navy-studio.png" alt="Drones" loading="lazy">
           <div class="cat-card-label">
-            <strong>Seguridad</strong>
-            <span>Vigilancia autónoma</span>
+            <strong>Drones</strong>
+            <span>Vigilancia aérea</span>
           </div>
-        </article>
+        </a>
       </div>
     </div>
 
@@ -894,9 +916,9 @@
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 Saimon Robotics. Todos los derechos reservados.</p>
       <div class="footer-legal">
-        <a href="#" class="footer-legal-link">Privacidad</a>
-        <a href="#" class="footer-legal-link">Términos</a>
-        <a href="#" class="footer-legal-link">Cookies</a>
+        <a href="aviso-privacidad.html" class="footer-legal-link">Privacidad</a>
+        <a href="terminos-condiciones.html" class="footer-legal-link">Términos</a>
+        <a href="aviso-privacidad.html#cookies" class="footer-legal-link">Cookies</a>
       </div>
     </div>
   </div>
@@ -1019,6 +1041,7 @@
               <option value="">Selecciona tu sector</option>
               <option>Logística</option>
               <option>Seguridad</option>
+              <option>Drones</option>
               <option>Médico</option>
               <option>Hotelería</option>
               <option>Hostelería</option>
@@ -1372,13 +1395,13 @@ const sectorData = {
       { model: 'SR-Sort Pro', desc: 'Sistema de clasificación y sorting para paquetería a 3,000 paquetes/hora.', price: 'Desde $120,000 USD', rent: '$4,800/mes' }
     ]
   },
-  seguridad: {
-    name: 'Seguridad',
+  drones: {
+    name: 'Drones',
     color: '#1A3A5C',
     robots: [
-      { model: 'SR-Patrol X1', desc: 'Robot de patrullaje con visión nocturna 4K, detección térmica y 5G.', price: 'Desde $62,000 USD', rent: '$2,400/mes' },
-      { model: 'SR-Shield Pro', desc: 'Robot de seguridad perimetral con IA para detección de intrusiones.', price: 'Desde $78,000 USD', rent: '$3,100/mes' },
-      { model: 'SR-Drone Guard', desc: 'Dron de vigilancia autónomo para perímetros de hasta 2km.', price: 'Desde $45,000 USD', rent: '$1,800/mes' }
+      { model: 'SR-SKY Compact', desc: 'Dron de vigilancia de entrada: 25 min de autonomía y cámara gran angular.', price: 'Consultar', rent: 'Consultar' },
+      { model: 'SR-SKY Pro', desc: 'Vigilancia aérea autónoma con 40 min, 7 km de alcance y zoom.', price: 'Consultar', rent: 'Consultar' },
+      { model: 'SR-SKY Max', desc: 'Insignia con 55 min, 10 km y cámara térmica.', price: 'Consultar', rent: 'Consultar' }
     ]
   },
   hoteleria: {
@@ -1861,6 +1884,7 @@ if (langBtn) {
 <script src="mega-menu.js"></script>
 <script src="scale-pin.js"></script>
 <script src="cart.js"></script>
+<script src="auth.js"></script>
 <script src="autoplay-hero.js"></script>
 <script src="chatbot.js"></script>
 <script src="back-to-top.js"></script>
