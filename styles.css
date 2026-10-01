@@ -2225,6 +2225,8 @@ body.is-intro .models-carousel-wrap {
   overflow: hidden;
   min-height: 0;
   box-shadow: 0 10px 30px rgba(17, 24, 39, .06);
+  text-decoration: none;
+  color: inherit;
 }
 
 .media-story-img {
